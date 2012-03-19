@@ -237,7 +237,7 @@ within {feed_items}.
 {feed_items}
 ---------------------------
 
-The {items} variable contains all of the items found within the feed:
+The {feed_items} variable contains all of the items found within the feed:
 
 - item_title
 - item_link
