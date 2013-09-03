@@ -147,6 +147,7 @@ Class Rss_parser {
 			}
 
 			$items[] = array(
+				'item_guid'		=> $item->get_id(),
 				'item_title' 		=> $item->get_title(),
 				'item_link' 		=> $item->get_permalink(),
 				'item_date' 		=> $item->get_date('U'),
@@ -239,6 +240,7 @@ within {feed_items}.
 
 The {feed_items} variable contains all of the items found within the feed:
 
+- item_guid
 - item_title
 - item_link
 - item_date: uses standard ExpressionEngine date formatting (e.g. {date format="%F %d %Y"})
